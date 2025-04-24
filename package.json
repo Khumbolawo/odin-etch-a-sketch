@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
     "test": "vitest",
+    "seltest": "mocha selenium-tests/*.spec.js",
     "predeply": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -20,12 +21,16 @@
     "eslint-plugin-prettier": "^5.2.6",
     "gh-pages": "^6.3.0",
     "jsdom": "^26.1.0",
+    "mocha": "^11.1.0",
     "prettier": "^3.5.3",
     "vite": "^6.2.0",
     "vitest": "^3.1.1"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
-    "tailwindcss": "^4.1.4"
+    "selenium": "^2.20.0",
+    "selenium-webdriver": "^4.31.0",
+    "tailwindcss": "^4.1.4",
+    "webdriver": "^9.12.6"
   }
 }
